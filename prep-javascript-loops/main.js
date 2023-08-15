@@ -1,53 +1,53 @@
 function whileLoop1() {
-  const Array = [];
+  const arrayNumbers10 = [];
   let i = 0;
   while (i < 10) {
-    Array.push(i);
+    arrayNumbers10.push(i);
     i++;
   }
-  return Array;
+  return arrayNumbers10;
 }
 
 console.log('whileLoop1 output:', whileLoop1());
 
 function whileLoop2() {
-  const Array = [];
+  const arrayNumbers18 = [];
   let i = 0;
   while (i <= 18) {
-    Array.push(i);
+    arrayNumbers18.push(i);
     i += 2;
   }
-  return Array;
+  return arrayNumbers18;
 }
 
 console.log('whileLoop2: ', whileLoop2());
 
 function forLoop1() {
-  const Array = [];
+  const arrayForNumbers10 = [];
   for (let i = 0; i < 10; i++) {
-    Array.push(i);
+    arrayForNumbers10.push(i);
   }
-  return Array;
+  return arrayForNumbers10;
 }
 
 console.log('forLoop1', forLoop1());
 
 function forLoop2() {
-  const Array = [];
+  const arrayCountdown = [];
   for (let i = 100; i >= 0; i--) {
-    console.log('Time until explotion' + Array.push(i) + '!');
+    console.log('Time until explotion' + arrayCountdown.push(i) + '!');
   }
-  return Array;
+  return arrayCountdown;
 }
 
 forLoop2();
 
 function forInLoop1(object) {
-  const Array = [];
+  const arrayOfPropNames = [];
   for (const property in object) {
-    Array.push(property);
+    arrayOfPropNames.push(property);
   }
-  return Array;
+  return arrayOfPropNames;
 }
 
 const object = {
@@ -60,11 +60,11 @@ const object = {
 console.log(forInLoop1(object));
 
 function forInLoop2(object) {
-  const Array = [];
+  const arrayOfProps = [];
   for (const property in object) {
-    Array.push(object[property]);
+    arrayOfProps.push(object[property]);
   }
-  return Array;
+  return arrayOfProps;
 }
 
 console.log(forInLoop2(object));
